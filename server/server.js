@@ -12,7 +12,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-app.use(require('./usuario/usuario'));
+//configuracion global de rutas
+app.use(require('./usuario/index'))
 
 
 //conectar a la base de datos
